@@ -22,15 +22,19 @@ $(function () {
 
 
     $(".time-block").each(function() {
-        var hourNow = $(this).attr("id").replace('hour-', '');
+        var hourNow = parseInt($(this).attr("id").replace('hour-', ''));
         console.log (hourNow);
 
         if (hourNow < currentHour) {
             $(this).addClass("past");
         }
 
-        if (hourNow === currentHour) {
+        else if (hourNow == currentHour) {
             $(this).addClass("present");
+        }
+
+        else {
+            $(this).addClass("future");
         }
     })
 
