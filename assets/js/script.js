@@ -15,7 +15,6 @@ $(function () {
 
     // Current hour of the day
     var currentHour = dayjs().get('hour');
-    console.log(currentHour);
 
     // Adds classes depending on which hour of the day it is currently
     $(".time-block").each(function() {
@@ -47,9 +46,5 @@ $(function () {
     $("#hour-15 .description").text(localStorage.getItem("hour-15"));
     $("#hour-16 .description").text(localStorage.getItem("hour-16"));
     $("#hour-17 .description").text(localStorage.getItem("hour-17"));
-
-    if (currentHour === 1) {
-        localStorage.clear("hour-8");
-    }
 
 });
