@@ -1,4 +1,4 @@
-# work-day-scheduler
+# Work day scheduler
 
 ## Name
 Work day scheduler
